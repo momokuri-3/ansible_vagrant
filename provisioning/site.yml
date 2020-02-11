@@ -1,0 +1,9 @@
+---
+- hosts: vagrants
+  become: true
+  user: vagrant
+  tasks:
+    - name: install git
+      yum: 
+        name: git
+        update_cache: yes
